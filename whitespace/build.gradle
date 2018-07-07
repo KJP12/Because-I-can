@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'net.kjp12.bic'
+
+sourceCompatibility = 1.10
+targetCompatibility = 1.10
+tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
+
+mainClassName = 'net.kjp12.bic.whitespace.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
