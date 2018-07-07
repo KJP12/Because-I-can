@@ -5,14 +5,22 @@ plugins {
 
 group = 'net.kjp12.bic'
 
-sourceCompatibility = 1.10
-targetCompatibility = 1.10
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
 
 mainClassName = 'net.kjp12.bic.whitespace.Main'
 
 repositories {
     mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': this.mainClassName
+        )
+    }
 }
 
 dependencies {
