@@ -1,4 +1,4 @@
-# Whitespace
+# Deprecated
 
 A project you can use to deprecate using a deprecated @Deprecated annotation. How useful.
 
